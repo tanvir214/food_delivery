@@ -1,0 +1,314 @@
+$primaryRed: #f40469;
+$primaryBlack: #000000;
+$primaryWhite: #ffff;
+$dwbg: #283646;
+
+$fontJost: "Jost", sans-serif;
+
+body {
+  font-family: $fontJost;
+}
+
+@mixin btn {
+  background-color: $primaryWhite;
+  border: none;
+  background-color: $primaryRed;
+  color: $primaryWhite;
+  font-family: $fontJost;
+  font-weight: 600;
+}
+
+@mixin content {
+  display: flex;
+}
+
+.logo > h2 {
+  color: $primaryRed;
+  font-size: 3rem;
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerBtn {
+  border: none;
+  background-color: $primaryWhite;
+  font-family: $fontJost;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.hero {
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10rem 0;
+}
+
+.hero h2 {
+  color: $primaryWhite;
+  text-align: center;
+  font-size: 4rem;
+  font-family: $fontJost;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.search {
+  justify-content: center;
+}
+
+.hero span {
+  padding: 12px 20px;
+  background-color: $primaryWhite;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border: none;
+  border-right: 1px solid #000000b0;
+}
+
+.fa-solid.fa-location-dot {
+  color: $primaryRed;
+  margin-right: 5px;
+}
+
+.form_Hero {
+  width: 40%;
+  padding: 12px 25px;
+  background-color: $primaryWhite;
+  border: none;
+}
+
+.btnHero {
+  @include btn();
+  padding: 12px 20px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.foodContent {
+  @include content();
+  gap: 3.5rem;
+  padding: 10rem 0;
+}
+
+.food-img {
+  width: 50%;
+}
+
+.food-img img {
+  width: 100%;
+}
+
+.foot-text {
+  width: 50%;
+}
+
+.foot-text h3 {
+  color: #000000;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  padding-bottom: 0.3em;
+}
+
+.foot-text p {
+  color: $primaryBlack;
+  font-family: $fontJost;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding-bottom: 0.3em;
+}
+
+.foodBtn {
+  @include btn();
+  border-radius: 50px;
+  padding: 12px 20px;
+}
+
+.top {
+  @include content();
+  justify-content: space-between;
+  color: $primaryBlack;
+}
+
+.top > h4 {
+  font-family: $fontJost;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.topBtn {
+  background-color: $primaryWhite;
+  border: none;
+}
+
+.fa-solid.fa-arrow-right {
+  color: $primaryBlack;
+  padding-left: 10px;
+}
+
+.picGal {
+  padding-top: 1em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.hotel1 {
+  grid-row: span 2;
+}
+
+.pic img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.pic h5 {
+  font-family: $fontJost;
+  color: $primaryBlack;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.hotel1 h5 {
+  padding: 15px 0;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2em;
+}
+
+.price p {
+  font-size: 16px;
+  font-family: $fontJost;
+  font-weight: 400;
+  margin: 0;
+}
+
+.fa-solid.fa-burger {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.a-solid fa-clock {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.work h2 {
+  text-align: center;
+  font-family: $fontJost;
+  color: $primaryBlack;
+  font-weight: 400;
+  font-size: 4rem;
+  padding-top: 4em;
+  padding-bottom: 1rem;
+}
+
+.workCont {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  align-items: center;
+  padding: 0 2em;
+}
+
+@mixin icon {
+  font-size: 4em;
+  color: #f40469;
+  background: url(../img/iconBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.fa-solid.fa-mobile-screen {
+  @include icon();
+  padding: 26px 39px;
+}
+
+.fa-solid.fa-utensils {
+  @include icon();
+  padding: 26px 34px;
+}
+
+.fa-solid.fa-drumstick-bite {
+  @include icon();
+  padding: 26px 31px;
+}
+
+.mcard {
+  border: none;
+  box-shadow: 0 0 4px 1px #f5f1f1;
+  border-radius: 25px;
+}
+
+.mcard h3 {
+  font-family: $fontJost;
+  font-size: 2em;
+  font-weight: 400;
+  color: $primaryRed;
+  padding: 0.8em 0;
+}
+
+.mcard p {
+  font-family: $fontJost;
+  font-size: 1.2em;
+  font-weight: 000;
+  color: $primaryBlack;
+}
+
+.sub {
+  margin-top: 10em;
+}
+
+.subCont {
+  background-image: url(../img/subsBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 8em 7em;
+  border-radius: 25px;
+}
+
+.subCont h3 {
+  width: 70%;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+.subBtn {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  margin-top: 2em;
+  gap: 3em;
+  align-items: center;
+}
+
+.dnBtn {
+  @include btn();
+  padding: 12px 25px;
+  background-color: $dwbg;
+  font-size: 1.3em;
+  border-radius: 30px;
+}
+
+.brBtn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  font-family: $fontJost;
+  font-weight: 200;
+}

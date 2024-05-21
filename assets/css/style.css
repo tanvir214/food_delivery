@@ -314,4 +314,76 @@ nav {
   font-weight: 200;
 }
 
+.foodLover {
+  margin-top: 6em;
+  text-align: center;
+}
+
+.foodLoverCont {
+  width: 60%;
+  margin: 8em auto 5em auto;
+}
+
+.foodLoverCont h3 {
+  color: #000000;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  padding-bottom: 0.3em;
+}
+
+.foodLoverCont p {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2em;
+  font-weight: 0;
+  color: #000000;
+}
+
+.foodLoverCont img {
+  width: 100%;
+  margin-top: 2em;
+}
+
+footer {
+  background-image: url(../img/footerbg.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #f8f9fa;
+}
+
+.footerNav {
+  width: 70%;
+}
+
+.footerNav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.footerNav ul li {
+  margin-top: 1em;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  color: #000000;
+}
+
+.footerCont {
+  display: flex;
+  width: 70%;
+  gap: 2em;
+  padding: 4em 0;
+}
+
+.fTwo {
+  display: flex;
+}
+
+.fLink ul {
+  list-style: none;
+}
+
 /*# sourceMappingURL=style.css.map */
